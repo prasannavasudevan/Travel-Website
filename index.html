@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderr Travels</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Navigation Menu -->
+  <header>
+    <nav>
+      <div class="brand">
+        <img src="./Images/logo.png" alt="Brand Logo" class="logo">
+        <span>Wanderr</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Book</a></li>
+        <li class="dropdown">
+          <a href="#">Packages</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">United States</a></li>
+            <li><a href="#">India</a></li>
+            <li><a href="#">France</a></li>
+            <li><a href="#">Germany</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <div class="auth-buttons">
+        <a href="login.html">
+          <button class="login-btn">Login</button>
+        </a>
+        <a href="register.html">
+          <button class="register-btn">Register</button>
+        </a>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- Background Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Wanderr</h1>
+      <h2>Visit <span id="place-name">United States</span></h2>
+      <a href="./login.html">
+      <button class="book-now-btn">Book Now</button>
+    </a>
+    </div>
+  </section>
+
+    <div class="booking-section">
+        <div class="image-section">
+            <img src="./Images/formImg.jpeg" class="logo" alt="Brand Image" />
+        </div>
+<div class="form-section">
+    <div class="form-card">
+        <h2>Booking Form</h2>
+        <form id="bookingForm">
+            <label for="destination">Where to:</label>
+            <select id="destination" required>
+                <option value="">Select a place</option>
+                <option value="paris">Paris</option>
+                <option value="new_york">New York</option>
+                <option value="tokyo">Tokyo</option>
+            </select>
+
+            <label for="persons">How Many Persons:</label>
+            <input type="number" id="persons" min="1" required />
+
+            <label for="startDate">Start Date:</label>
+            <input type="date" id="startDate" required />
+
+            <label for="endDate">End Date:</label>
+            <input type="date" id="endDate" required />
+
+            <label for="description">Description:</label>
+            <textarea id="description" minlength="50" maxlength="500" required></textarea>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+</div>
+
+    </div>
+
+    <div class="package-gallery">
+        <h2>Our Packages</h2>
+        <div class="package-row">
+            <div class="package-card">
+                <img src="./Images/nyc.jpg" alt="Package 1">
+                <h3>New York City</h3>
+                <p>Attractions: 
+                    Central Park offers a sprawling urban oasis in New York, perfect for relaxation, picnics, and outdoor activities.</p>
+                <p>Price: $250</p>
+                <p>Rating: ★★★★☆</p>
+                <button>Book Now</button>
+            </div>
+            <div class="package-card">
+                <img src="./Images/tokyo.jpg" alt="Package 2">
+                <h3>Tokyo</h3>
+                <p>Attractions: The Senso-ji Temple, Tokyo's oldest temple, attracts visitors with its stunning architecture, Asakusa district.</p>
+                <p>Price: $200</p>
+                <p>Rating: ★★★★☆</p>
+                <button>Book Now</button>
+            </div>
+            <div class="package-card">
+                <img src="./Images/paris.jpg" alt="Package 3">
+                <h3>Paris</h3>
+                <p>Attractions: The Eiffel Tower is a breathtaking symbol of Paris, offering stunning views of the city from its observation decks.</p>
+                <p>Price: $150</p>
+                <p>Rating: ★★★★☆</p>
+                <button>Book Now</button>
+            </div>
+            <div class="package-card">
+                <img src="./Images/china.jpg" alt="Package 4">
+                <h3>China</h3>
+                <p>Attractions: The Great Wall of China is an iconic ancient structure, showcasing the country's rich history and stunning landscapes.</p>
+                <p>Price: $100</p>
+                <p>Rating: ★★★★☆</p>
+                <button>Book Now</button>
+            </div>
+            <div class="package-card">
+                <img src="./Images/africa.jpg" alt="Package 5">
+                <h3>Africa</h3>
+                <p>Attractions: The Serengeti National Park in Tanzania breathtaking landscapes, making it a premier destination for safari enthusiasts.</p>
+                <p>Price: $50</p>
+                <p>Rating: ★★★★☆</p>
+                <button>Book Now</button>
+            </div>
+            <div class="package-card">
+                <img src="./Images/dubai.jpg" alt="Package 6">
+                <h3>Dubai</h3>
+                <p>Attractions: Habibi come to Dubai.</p>
+                <p>Price: $250</p>
+                <p>Rating: ★★★★☆</p>
+                <button>Book Now</button>
+            </div>
+            <div class="package-card">
+                <img src="./Images/moracco.jpg" alt="Package 7">
+                <h3>Moracco</h3>
+                <p>Attractions: Marrakech's Medina, a UNESCO World Heritage site, is famous for its historic palaces, and the stunning Jardin Majorelle.</p>
+                <p>Price: $110</p>
+                <p>Rating: ★★★★☆</p>
+                <button>Book Now</button>
+            </div>
+            <div class="package-card">
+                <img src="./Images/singapore.jpg" alt="Package 8">
+                <h3>Singapore</h3>
+                <p>Attractions: Marina Bay Sands is an iconic resort complex in Singapore, known for its striking architecture and stunning views of the city skyline.</p>
+                <p>Price: $150</p>
+                <p>Rating: ★★★★☆</p>
+                <button>Book Now</button>
+            </div>
+            <div class="package-card">
+                <img src="./Images/swizz.jpg" alt="Package 9">
+                <h3>Switzerland</h3>
+                <p>Attractions: Heavan on Earth</p>
+                <p>Price: $350</p>
+                <p>Rating: ★★★★☆</p>
+                <button>Book Now</button>
+            </div>
+        </div>
+    </div>
+
+<div class="services-section">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+        <div class="service-card">
+            <h3>Affordable Hotel</h3>
+            <p>Enjoy comfortable stays without breaking the bank.</p>
+        </div>
+        <div class="service-card">
+            <h3>Food & Drinks</h3>
+            <p>Experience local cuisine with our curated dining options.</p>
+        </div>
+        <div class="service-card">
+            <h3>Safety Guide</h3>
+            <p>Your safety is our priority with experienced guides.</p>
+        </div>
+        <div class="service-card">
+            <h3>Transportation Services</h3>
+            <p>Convenient transport to all your destinations.</p>
+        </div>
+        <div class="service-card">
+            <h3>24/7 Customer Support</h3>
+            <p>We're here for you anytime, day or night.</p>
+        </div>
+        <div class="service-card">
+            <h3>Customized Itineraries</h3>
+            <p>Personalized plans to suit your travel preferences.</p>
+        </div>
+    </div>
+</div>
+
+
+<section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-container">
+      <div class="gallery-card">
+        <img src="Images/galleryOne.jpg" width="500px" height="500px"  alt="Experience 1" />
+      </div>
+      <div class="gallery-card">
+        <img src="Images/galleryTwo.jpg" width="500px" height="500px" alt="Experience 2" />
+      </div>
+      <div class="gallery-card">
+        <img src="Images/galleryThree.jpg" width="500px" height="500px" alt="Experience 3" />
+      </div>
+      <div class="gallery-card">
+        <img src="Images/galleryFour.jpg" width="500px" height="500px" alt="Experience 4" />
+      </div>
+      <div class="gallery-card">
+        <img src="Images/galleryFive.jpg" width="470px" height="470px" alt="Experience 5" />
+      </div>
+      <div class="gallery-card">
+        <img src="Images/gallerySix.jpg" width="470px" height="470px" alt="Experience 6" />
+      </div>
+      <div class="gallery-card">
+        <img src="Images/gallerySeven.jpg" width="470px" height="470px" alt="Experience 7" />
+      </div>
+      <div class="gallery-card">
+        <img src="Images/galleryEight.jpg" width="470px" height="470px" alt="Experience 8" />
+      </div>
+    </div>
+  </section>
+
+  <!--About Us Section -->
+
+  <section id="about-us">
+    <h2>About Us</h2>
+    <div class="about-us-container">
+      <div class="about-us-image">
+        <img src="Images/about.jpg" height="500" alt="Company Image" />
+      </div>
+      <div class="about-us-details">
+        <h3>Our Company</h3>
+        <p>Established in 1998, Wanderr has been dedicated to Fulfill Travellers Satisfaction.</p>
+        <p>We provide Best Travel Plans, Luxurious Hotels for stay at an afforable price.
+          We strive for excellence in everything we do.
+          Here's a brief description you could use for The Wander Travels company's
+          Founded with a passion for exploration, The Wander Travels is dedicated to creating unforgettable journeys across the globe.
+          We believe that travel is more than just visiting places, but rather it's about experiencing cultures, connecting with people, and discovering new perspectives.
+          With a team of seasoned travelers and local experts, we offer carefully crafted itineraries that cater to all types of adventurers.
+          Whether you’re seeking thrilling excursions, serene landscapes, or cultural immersion, The Wander Travels is here to make your dream destinations a reality.
+          Join us, and let’s wander the world together.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+
+  <footer>
+    <p>&copy; 1998-2024 Wanderr. All Rights Reserved.</p>
+    <div class="social-icons">
+      <a href="#"><img src="Images/facebook.jpg" width="35px" height="25px" alt="Facebook" /></a>
+      <a href="#"><img src="Images/instagram.png" alt="Instagram" /></a>
+      <!-- Add more icons if needed -->
+    </div>
+  </footer>
+  
+
+
+<script >
+    const places = ['United States', 'India', 'France', 'Germany', 'Australia', 'Canada'];
+    let currentIndex = 0;
+    
+    const placeNameElement = document.getElementById('place-name');
+    
+    function updatePlaceName() {
+      placeNameElement.textContent = places[currentIndex];
+      currentIndex = (currentIndex + 1) % places.length;
+    }
+    
+    setInterval(updatePlaceName, 200);
+    
+    document.getElementById('bookingForm').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+
+    const destination = document.getElementById('destination').value;
+    const persons = document.getElementById('persons').value;
+    const startDate = document.getElementById('startDate').value;
+    const endDate = document.getElementById('endDate').value;
+    const description = document.getElementById('description').value;
+
+    if (destination && persons && startDate && endDate && description.length >= 50) {
+        alert('Booking successful');
+        this.reset();
+    } else {
+        alert('Please fill all fields correctly.');
+    }
+});
+</script>
+
+</body>
+</html>
